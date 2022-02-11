@@ -1,7 +1,9 @@
 # node-red-simpel-afvalwijzer
 Simple afwijzer.nl node setup, specificly for Synology HASS-core install.
 
-![This is an image](https://github.com/javos65/node-red-simpel-afvalwijzer/blob/main/afvalwijzer_example.jpg?raw=true)
+
+![example](https://github.com/javos65/node-red-simpel-afvalwijzer/blob/main/afvalwijzer_example.jpg?raw=true)
+
 
 
 In case you can NOT install the full featured version of afvalwijzer add-on, this is "the easiest way" to go.
@@ -48,6 +50,8 @@ Once done: restart HASS and check if you can see the sensors , ie 'sensor.afval_
 #3, the graphics picture... This is on synology acould be an issue, as the /local directory of HASS is not applicable.
 Store your 'afvalwijzer.png' file in your local network at a http-adressable place.
 I used the synology web page, as I had .php /.www setup. be smart.
+
+![example](https://github.com/javos65/node-red-simpel-afvalwijzer/blob/main/afvalwijzer.png?raw=true)
 
 #4 HASS: In you custom LoveLace (assuming you have this figured out), add the "Picture Elements Card"
 The example code give you some idea, but replace it with the yaml code from "Picture Elements Card Configuration.yaml" file
