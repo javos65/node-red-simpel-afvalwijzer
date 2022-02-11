@@ -1,9 +1,14 @@
 # node-red-simpel-afvalwijzer
 simple afwijzer.nl node setup
 
-uses the api-link fro mthe afvalwijzer app, 
-loads json data, and parses the next 3 events.
+In case you can NOT install the full featured version of 
+ie for Synology HAS-core
 
-output is a json message containing the next 3 afvalwijzer events, postable for mqtt
+uses the api-link from the afvalwijzer app, loads json data, and parses the next 4 events.
 
-simple, no sweat
+output is a json message containing the next 4 afvalwijzer events, postable for mqtt.
+alternativly the result is 4 json message for mqtt
+
+HomeAssistant: use the
+
+simple, no sweat.
