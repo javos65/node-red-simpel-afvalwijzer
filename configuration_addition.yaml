@@ -1,0 +1,34 @@
+# SENSOR SECTION IN configuration.yaml
+sensor:
+
+# GARBAGE SENSORS
+
+  - platform: mqtt
+    state_topic: "nodered/sensor/AFV/plastic/state"
+    name: 'Afval Plastic'
+    value_template:  '{{value_json.text}}'
+    unique_id: "AFV1"
+    device_class: timestamp
+
+  - platform: mqtt
+    state_topic: "nodered/sensor/AFV/restafval/state"
+    name: 'Afval Rest'
+    value_template:  '{{value_json.text}}'
+    unique_id: "AFV2"
+    device_class: timestamp
+
+  - platform: mqtt
+    state_topic: "nodered/sensor/AFV/papier/state"
+    name: 'Afval Papier'
+    value_template:  '{{value_json.text}}'
+    unique_id: "AFV3"
+    device_class: timestamp
+
+  - platform: mqtt
+    state_topic: "nodered/sensor/AFV/gft/state"
+    name: 'Afval Groen'
+    value_template:  '{{value_json.text}}'
+    unique_id: "AFV4"
+    device_class: timestamp
+
+# This creates 4 sensor entities with a TEXT content, timestamp class is not relevant.
