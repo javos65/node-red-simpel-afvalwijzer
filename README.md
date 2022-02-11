@@ -11,9 +11,24 @@ You need:
 4. Capable to edit your HASS config.yaml file (placed for synology at /usr/local/homeassistant/var/config/configuration.yaml
 
 This is the way it works:
-1. Node-red: scrape the API - use flow
+#1. Node-red: scrape the API
+- use afvalwijze_flows.json to import
+This uses the api-link from the afvalwijzer app, loads json data, and parses the next 4 events, spit it out to your mqtt server.
 
-uses the api-link from the afvalwijzer app, loads json data, and parses the next 4 events.
+ie gft moves toe : nodered/sensor/AFV/gft/state
+json code is by example : {
+  "device": "AFV",
+  "name": "Afvalwijzer",
+  "sequence": 0,
+  "ntype": "gft",
+  "type": "gft",
+  "datum": "2022-02-14",
+  "text": "14 Feb",
+  "epoch": 1644796800000
+}
+
+same for 'papier', 'restafval' and 'plastic' 
+
 
 output is a json message containing the next 4 afvalwijzer events, postable for mqtt.
 alternativly the result is 4 json message for mqtt
