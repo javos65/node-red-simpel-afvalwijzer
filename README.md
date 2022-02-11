@@ -1,7 +1,7 @@
 # node-red-simpel-afvalwijzer
 Simple afwijzer.nl node setup, specificly for Synology HASS-core install.
 
-(https://github.com/javos65/node-red-simpel-afvalwijzer/blob/main/afvalwijzer_example.jpg?raw=true)
+![This is an image](https://github.com/javos65/node-red-simpel-afvalwijzer/blob/main/afvalwijzer_example.jpg?raw=true)
 
 
 In case you can NOT install the full featured version of afvalwijzer add-on, this is "the easiest way" to go.
