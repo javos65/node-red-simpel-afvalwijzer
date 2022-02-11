@@ -3,13 +3,13 @@ Simple afwijzer.nl node setup, specificly for Synology HASS-core install.
 
 In case you can NOT install the full featured version of afvalwijzer add-on, this is "the easiest way" to go.
 ie for Synology HAS-core it's very hard to SSH everything to install the add-on's. Synology is not flexble on the install.
-**
-You need:
-1. Node-red server running, ie on a raspi
-2. MQTT server-running, is on you synology or raspi
-3. Home Assistant running (on Synology)
-4. Capable to edit your HASS config.yaml file (placed for synology at /usr/local/homeassistant/var/config/configuration.yaml
-**
+
+**You need:
+**1. Node-red server running, ie on a raspi
+**2. MQTT server-running, is on you synology or raspi
+**3. Home Assistant running (on Synology)
+**4. Capable to edit your HASS config.yaml file (placed for synology at /usr/local/homeassistant/var/config/configuration.yaml
+
 This is the way it works:
 
 #1. Node-red: scrape the API
@@ -20,7 +20,7 @@ you can check the API call in your browser -  dont forget to change the zip code
 run the node:
 ie gft posts to : nodered/sensor/AFV/gft/state
 json code is by example :
-{
+*{
   "device": "AFV",
   "name": "Afvalwijzer",
   "sequence": 0,
@@ -29,7 +29,7 @@ json code is by example :
   "datum": "2022-02-14",
   "text": "14 Feb",
   "epoch": 1644796800000
-}
+}*
 
 Same for 'papier', 'restafval' and 'plastic' 
 Use MQttExplorer or any otehr mqtt app to check the results
