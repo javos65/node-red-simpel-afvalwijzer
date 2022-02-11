@@ -1,0 +1,35 @@
+type: picture-elements
+image: http://<your synology server>/web_images/afvalwijzer.png
+elements:
+  - type: state-label
+    entity: sensor.afval_plastic
+    style:
+      top: 65%
+      left: 61%
+      font-size: 16px
+      color: white
+      font-weight: lighter
+  - type: state-label
+    entity: sensor.afval_groen
+    style:
+      top: 65%
+      left: 16%
+      font-size: 16px
+      color: white
+      font-weight: lighter
+  - type: state-label
+    entity: sensor.afval_rest
+    style:
+      top: 65%
+      left: 84%
+      font-size: 16px
+      color: white
+      font-weight: lighter
+  - type: state-label
+    entity: sensor.afval_papier
+    style:
+      top: 65%
+      left: 39%
+      font-size: 16px
+      color: white
+      font-weight: lighter
